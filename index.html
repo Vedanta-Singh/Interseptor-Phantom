@@ -5,8 +5,8 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>PHANTOM — SIH26050 | Team 188</title>
 <meta name="description" content="PHANTOM — High Altitude Performance Optimization & Robust Design of Anti-Drone System | SIH26050 | Team 188">
-<link rel="icon" type="image/jpeg" href="./assets/sihlogo.jpg?v=2">
-<link rel="shortcut icon" href="./assets/sihlogo.jpg?v=2" type="image/jpeg">
+<link rel="icon" type="image/jpeg" href="./assets/sihlogo.jpg?v=3">
+<link rel="shortcut icon" href="./assets/sihlogo.jpg?v=3" type="image/jpeg">
 <style>
 :root{--navy:#103d64;--blue:#0879cf;--cyan:#15a9e6;--ink:#1a344b;--muted:#6c7f8f;--line:#dbe6ee;--soft:#f5f9fc;--orange:#f38a28;--green:#20a76a;--red:#e95a5a;--shadow:0 16px 38px rgba(17,55,82,.09)}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#fff;color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.48}a{text-decoration:none;color:inherit}.wrap{max-width:1420px;margin:auto;padding:0 26px}.top{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.95);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}.nav{height:72px;display:flex;align-items:center;justify-content:space-between}.brand{display:flex;align-items:center;gap:11px}.brandMark{width:35px;height:35px;border-radius:10px;background:linear-gradient(135deg,var(--orange),var(--blue));display:grid;place-items:center;color:#fff;font-weight:900;font-size:13px}.brand b{display:block;letter-spacing:.16em;font-size:18px;color:var(--navy)}.brand small{display:block;font-size:8px;letter-spacing:.16em;color:var(--muted)}.links{display:flex;gap:18px;font-size:10px;color:#4d6577}.links a:hover{color:var(--blue)}.navbtn{padding:10px 13px;border:1px solid #a9c8dd;border-radius:999px;color:var(--blue);font-size:9px;font-weight:900;letter-spacing:.12em}section{padding:90px 0}.soft{background:var(--soft)}.eyebrow{font-size:9px;color:var(--blue);font-weight:950;letter-spacing:.2em;text-transform:uppercase}.head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:28px}.head h2{font-size:clamp(38px,5vw,72px);line-height:.92;letter-spacing:-.055em;color:var(--navy);margin:8px 0 0}.sectno{font-size:10px;color:#8b9ca9;letter-spacing:.14em}.panel{background:#fff;border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow)}.box{padding:25px}.grid{display:grid;gap:18px}.g2{grid-template-columns:1.06fr .94fr}.g3{grid-template-columns:repeat(3,1fr)}.g4{grid-template-columns:repeat(4,1fr)}
@@ -39,6 +39,61 @@
 .socialCorner a{padding:9px 12px;border:1px solid #cbdde9;border-radius:999px;background:rgba(255,255,255,.94);backdrop-filter:blur(10px);box-shadow:0 8px 22px rgba(17,55,82,.08);font-size:8px;font-weight:950;letter-spacing:.1em;color:#315a76;transition:.2s ease}
 .socialCorner a:hover{color:var(--blue);border-color:#9fc6df;transform:translateY(-1px)}
 @media(max-width:700px){.socialCorner{top:82px;right:14px}.socialCorner a{padding:8px 10px;font-size:7px}}
+
+/* Mobile layout fixes */
+@media (max-width: 1100px){
+  .hero{
+    background:
+      linear-gradient(90deg,rgba(255,255,255,.98) 0%,rgba(255,255,255,.90) 45%,rgba(255,255,255,.35) 75%,rgba(255,255,255,0) 100%),
+      url('assets/eg.png') center right/cover no-repeat !important;
+    background-color:#fff;
+  }
+}
+@media (max-width: 650px){
+  body{overflow-x:hidden;}
+  .hero{
+    min-height:720px;
+    background:
+      linear-gradient(180deg,rgba(255,255,255,.98) 0%,rgba(255,255,255,.94) 42%,rgba(255,255,255,.62) 68%,rgba(255,255,255,.28) 100%),
+      url('assets/eg.png') 62% center/cover no-repeat !important;
+    background-color:#fff;
+  }
+  .heroInner{
+    min-height:720px;
+    display:flex;
+    align-items:flex-start;
+    padding-top:72px;
+    padding-bottom:40px;
+  }
+  .heroCopy{width:100%;}
+  .heroCopy h1{font-size:64px;line-height:.82;}
+  .heroCopy h3{font-size:28px;max-width:100%;}
+  .lead{font-size:14px;}
+  .heroArt{display:none;}
+  .numbers{margin-top:-18px;}
+  .statbar{grid-template-columns:1fr 1fr !important;}
+  .stat{padding:14px;}
+  .stat .n{font-size:24px;}
+  .stat .l{font-size:7px;}
+  .risk{
+    display:grid;
+    grid-template-columns:1fr !important;
+    gap:5px;
+  }
+  .risk .arrow{
+    display:block !important;
+    padding:2px 0 !important;
+    line-height:1;
+    font-size:0;
+  }
+  .risk .arrow::before{content:'↓';font-size:14px;}
+  .gallery{grid-template-columns:1fr !important;}
+  .proto img{height:auto;max-height:500px;object-fit:cover;}
+  .threatGrid{grid-template-columns:1fr !important;}
+  .threatFlow{grid-template-columns:1fr !important;}
+  .threatCard img,.threatCard video{height:auto;max-height:360px;object-fit:cover;}
+}
+
 </style>
 </head>
 <body>
